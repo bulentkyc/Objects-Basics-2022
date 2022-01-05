@@ -58,6 +58,7 @@ console.log('myPen: ', myPen);
 console.log('myPen.color: ', myPen.color);
 //Mistake, variable are not able to be used with "."
 //myKeyName is a variable which is defined on line 43
+// If there's no key with the name here, JS creates a new property with that
 myPen.myKeyName = 'yellow';
 console.log('myPen: ', myPen);
 
@@ -69,11 +70,17 @@ console.log('myPen: ', myPen);
 myPen['myKeyName'] = 'orange';
 console.log('myPen: ', myPen);
 
-
-
-
 //////////////////////////////////////////////////////////
+//Delete
+delete myPen.material;
+console.log('myPen: ', myPen);
 
+delete myPen['myKeyName'];
+console.log('myPen: ', myPen);
+
+delete myPen[myKeyName];
+console.log('myPen: ', myPen);
+//////////////////////////////////////////////////////////
 let myFirstObj = {};
 
 console.log(myFirstObj);
