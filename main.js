@@ -71,7 +71,16 @@ myPen['myKeyName'] = 'orange';
 console.log('myPen: ', myPen);
 
 //////////////////////////////////////////////////////////
+//JSON.stringify
+//Syntax:
+//JSON.stringify(object);
+
+//////////////////////////////////////////////////////////
 //Delete
+let strMyPen = JSON.stringify(myPen);
+console.log('String myPen: ', strMyPen);
+console.log(typeof strMyPen);
+console.log('Before deleting myPen', myPen);
 delete myPen.material;
 console.log('myPen: ', myPen);
 
@@ -110,3 +119,16 @@ myCar = 'Tesla';
 myAuto.brand = 'Tesla';
 
 console.log(myAuto);
+
+
+
+//////////////////////////////////////////////////////////
+let x = 123;
+
+const increaseRandomly = (initialValue) => {
+    return `${initialValue + Math.ceil(Math.random()*10)}`;
+}
+
+x = increaseRandomly(x)
+console.log(x);
+console.log(typeof x);
