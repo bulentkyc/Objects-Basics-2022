@@ -147,7 +147,7 @@ let myHandy = {
 
 console.log(myHandy);
 //////////////////////////////////////////////////////////
-
+//Shortcuts:
 let name = prompt('name:');
 let age = prompt('age:');
 let email = prompt('email:');
@@ -161,5 +161,24 @@ let person = {
 console.log(person);
 
 //////////////////////////////////////////////////////////
-
+//Shortcuts:
+console.log('Bulent')
+console.log(prompt('number?'))
 console.log({name,age})
+
+//////////////////////////////////////////////////////////
+//Nested Objects
+
+let myCar2 = {
+    brand: 'Bugatti',
+    color: 'White and blue',
+    engine: 1000,
+    damage: false,
+    preOwner: undefined,
+    audioSystem: {
+        brand: 'Sony',
+        power: 230,
+        speakers: 20
+    }
+}
+
